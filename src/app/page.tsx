@@ -10,6 +10,7 @@ import SectionSix from "@/components/home-sections/SectionSix";
 import SectionSeven from "@/components/home-sections/SectionSeven";
 import SectionEight from '@/components/home-sections/SectionEight';
 import TestimonySection from '@/components/home-sections/TestimonySection';
+import PrincipalProductSection from '@/components/home-sections/PrincipalProductSection';
 import CookieBanner from '@/components/cookies/CookieBanner';
 
 
@@ -35,6 +36,7 @@ export default function Home({
         {videoEnded && (
             <>
               <SectionSix />
+              <PrincipalProductSection />
               <SectionThree />
               <SectionTwo />
               <SectionEight />
@@ -42,6 +44,7 @@ export default function Home({
               <TestimonySection />
               <SectionFive />
               <SectionSix />
+              <PrincipalProductSection />
               <SectionThree />
               <SectionSeven />
             </>

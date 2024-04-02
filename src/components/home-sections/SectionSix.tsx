@@ -44,7 +44,7 @@ export default function SectionSix() {
                         href="mailto:goalcasor@gmail.com"
                         target="_blank" 
                     >
-                        <h3>goalcasor@gmail.com</h3>
+                        <h3>fuelfactorx@gmx.es</h3>
                     </a>
                 </div>
             </div>

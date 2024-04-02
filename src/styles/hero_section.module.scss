@@ -23,7 +23,7 @@
     justify-content: space-around;
     align-items: center;
     width: 50vw;
-    height: 70%;
+    height: fit-content;
     @extend %text-container-blur;
     padding: 1rem;
     border-radius: 10px;
@@ -31,7 +31,6 @@
     text-align: center;
     @include isMobile{
         width: 100%;
-        height: fit-content;
         text-align: left;
 
     }

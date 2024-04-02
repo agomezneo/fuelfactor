@@ -13,7 +13,7 @@ const HeroSection = () => {
                         FFX | Tratamiento integral para tu combustible.
                     </h1>
                     <p className={styles.description}>
-                        Ahorra hasta un 30% en tu factura de combustible. Excelente para tu motor, para tu bolsillo y por supuesto, para el planeta
+                        Ahorra hasta un 30% en tu factura de combustible. Excelente para tu motor, para tu bolsillo y sobre todo para el planeta.
                     </p>
                     <Button
                         primary

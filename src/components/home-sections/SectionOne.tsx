@@ -37,7 +37,7 @@ const SectionOne: React.FC<SectionOneProps> = ({ videoEnded, setVideoEnded }) =>
       }
 
       if(percentPlayed >= 0 && percentPlayed < 25 ){
-        setCallToAction('Es importante que vea este video y comprendas lo que estás a punto de adquidir. Sin rollos, en un momento tendrás acceso a la tienda, también a muestras gratuitas');
+        setCallToAction('Es importante que veas este video y comprendas lo que estás a punto de adquidir. Sin rollos, en un momento tendrás acceso a la tienda, también a muestras gratuitas');
       }else if (percentPlayed >=25 && percentPlayed < 60) {
         setCallToAction('¡Descubre el secreto detrás de un motor más potente y eficiente! Elige FFX y siente la diferencia en cada kilómetro recorrido.');
       } else if (percentPlayed >= 60 && percentPlayed < 90) {

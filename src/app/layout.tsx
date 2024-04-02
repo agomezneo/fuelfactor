@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import { GoogleTagManager, GoogleAnalytics  } from '@next/third-parties/google'
-
+import { OwnersProvider } from "@/context/OwnersContext";
+import { ProductsProvider } from "@/context/ProductsContext";
 import { Inter } from "next/font/google";
 import "@/styles/theme/globals.scss";
 import Header from "@/components/headers/Header";
@@ -40,10 +41,14 @@ export default function RootLayout({
         `}
       </Script>
       <body className={inter.className}>
-       {/*  <Header /> */}
+      <OwnersProvider>
+      <ProductsProvider>
+        {/* <Header /> */}
         <main>
           {children}
-        </main>  
+        </main>
+        </ProductsProvider>
+      </OwnersProvider>
       </body>
     </html>
   );

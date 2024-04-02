@@ -1,5 +1,5 @@
 'use client'
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef, useState, useEffect, useContext } from 'react';
 import styles from '@/styles/section_three.module.scss'
 import { ProductData } from '@/data/ProductCardData'
 import ProductCard from '../cards/ProductCard'
@@ -7,11 +7,13 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { ProductsContext, useProducts } from '@/context/ProductsContext';
 
 export default function SectionThree() {
 
     const progressCircle = useRef<SVGSVGElement | null>(null);
     const progressContent = useRef<HTMLSpanElement | null>(null);
+    const {products} = useProducts();  
 
     const onAutoplayTimeLeft = (swiper: any, time: number, progress: number) => {
         if (progressCircle.current && progressContent.current) {
@@ -47,7 +49,7 @@ export default function SectionThree() {
                     }}
                     className="mySwiper"
                 >
-                    {ProductData.map(product => (
+                    {products.map(product => (
                         <SwiperSlide key={product.id}>
                             <ProductCard product={product} />
                         </SwiperSlide>
